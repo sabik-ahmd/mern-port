@@ -5,12 +5,12 @@ import {
   FaLightbulb, 
   FaRocket, 
   FaGraduationCap,
-  FaUsers,
   FaCode,
   FaLaptopCode,
   FaBrain
 } from "react-icons/fa";
 import { SiLeetcode, SiCodewars } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const [activeTab, setActiveTab] = useState("story");
@@ -411,22 +411,25 @@ const About = () => {
               If you're looking for a passionate developer who's eager to make an impact, let's connect!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <motion.a
-                href="#contact"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/30 transition-all"
-              >
-                Get In Touch
-              </motion.a>
-              <motion.a
-                href="#projects"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 bg-white/10 border border-white/20 text-white font-semibold rounded-lg hover:bg-white/20 transition-all"
-              >
-                See My Work
-              </motion.a>
+              <Link to="/contact">
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-purple-500/30 transition-all cursor-pointer"
+                >
+                  Get In Touch
+                </motion.div>
+              </Link>
+              
+              <Link to="/projects">
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-6 py-3 bg-white/10 border border-white/20 text-white font-semibold rounded-lg hover:bg-white/20 transition-all cursor-pointer"
+                >
+                  See My Work
+                </motion.div>
+              </Link>
             </div>
           </div>
         </motion.div>
