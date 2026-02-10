@@ -1,6 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
-import { FaBars, FaTimes, FaSun, FaMoon, FaDownload, FaRocket, FaLightbulb } from "react-icons/fa";
+import { 
+  FaBars, 
+  FaTimes, 
+  FaSun, 
+  FaMoon, 
+  FaDownload, 
+  FaRocket, 
+  FaLightbulb,
+  FaLinkedin,  // Added this
+  FaGithub,    // Added this
+  FaTwitter    // Added this
+} from "react-icons/fa";
 import { HiHome, HiUser, HiFolder, HiCode, HiMail, HiSparkles } from "react-icons/hi";
 import { Link, useLocation } from "react-router-dom";
 
@@ -594,20 +605,29 @@ const Navbar = () => {
                   </button>
                 </div>
                 
-                {/* Social Links */}
+                {/* Social Links - Now with imported icons */}
                 <div className="flex justify-center gap-4 mt-4 pt-4 border-t border-white/10">
-                  {['linkedin', 'github', 'twitter'].map((platform) => (
-                    <motion.a
-                      key={platform}
-                      href="#"
-                      whileTap={{ scale: 0.9 }}
-                      className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-gray-400 hover:text-white transition-all"
-                    >
-                      {platform === 'linkedin' && <FaLinkedin className="w-4 h-4" />}
-                      {platform === 'github' && <FaGithub className="w-4 h-4" />}
-                      {platform === 'twitter' && <FaTwitter className="w-4 h-4" />}
-                    </motion.a>
-                  ))}
+                  <motion.a
+                    href="#"
+                    whileTap={{ scale: 0.9 }}
+                    className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-gray-400 hover:text-white transition-all"
+                  >
+                    <FaLinkedin className="w-4 h-4" />
+                  </motion.a>
+                  <motion.a
+                    href="#"
+                    whileTap={{ scale: 0.9 }}
+                    className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-gray-400 hover:text-white transition-all"
+                  >
+                    <FaGithub className="w-4 h-4" />
+                  </motion.a>
+                  <motion.a
+                    href="#"
+                    whileTap={{ scale: 0.9 }}
+                    className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-gray-400 hover:text-white transition-all"
+                  >
+                    <FaTwitter className="w-4 h-4" />
+                  </motion.a>
                 </div>
               </div>
 

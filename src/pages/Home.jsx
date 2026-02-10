@@ -814,7 +814,7 @@ const Home = () => {
     "desc": "Started learning React.js and modern frontend development"
   },
   {
-    "year": "2023 Aug",
+    "year": "2025 Jan",
     "title": "React.js Internship",
     "desc": "6-month intensive internship building production projects"
   },
@@ -824,7 +824,7 @@ const Home = () => {
     "desc": "Building personal projects and expanding skill set"
   },
   {
-    "year": "2024 Jul-Jan 2025",
+    "year": "2025 Jul-Jan 2026",
     "title": "React JS Developer Internship",
     "desc": "Completed internship at THE SKYBRISK | Certificate ID: 20250320-0368"
   },
