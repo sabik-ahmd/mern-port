@@ -90,21 +90,21 @@ const Contact = () => {
     {
       icon: <FaLinkedin />,
       label: "LinkedIn",
-      url: "https://linkedin.com/in/ahammadsabik",
+      url: "https://www.linkedin.com/in/ahammad-sabik",
       color: "hover:bg-[#0A66C2] hover:border-[#0A66C2]",
       description: "Connect professionally"
     },
     {
       icon: <FaGithub />,
       label: "GitHub",
-      url: "https://github.com/ahammadsabik",
+      url: "https://github.com/sabik-ahmd",
       color: "hover:bg-gray-800 hover:border-gray-800",
       description: "Check my projects"
     },
     {
       icon: <FaTwitter />,
       label: "Twitter",
-      url: "https://twitter.com/ahammadsabik",
+      url: "https://x.com/sabik_ahmd?t=w0BjueZObz8400v-_we2xw&s=09",
       color: "hover:bg-[#1DA1F2] hover:border-[#1DA1F2]",
       description: "Follow for updates"
     }

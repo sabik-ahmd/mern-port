@@ -492,9 +492,9 @@ const Home = () => {
                       className="flex justify-center gap-4 md:gap-6 mt-6 md:mt-8"
                     >
                       {[
-                        { icon: <FaLinkedin />, color: "hover:text-[#0A66C2]", label: "LinkedIn", url: "https://linkedin.com/in/ahammadsabik" },
-                        { icon: <FaGithub />, color: "hover:text-gray-300", label: "GitHub", url: "https://github.com/ahammadsabik" },
-                        { icon: <FaTwitter />, color: "hover:text-[#1DA1F2]", label: "Twitter", url: "https://twitter.com/ahammadsabik" },
+                        { icon: <FaLinkedin />, color: "hover:text-[#0A66C2]", label: "LinkedIn", url: "https://www.linkedin.com/in/ahammad-sabik" },
+                        { icon: <FaGithub />, color: "hover:text-gray-300", label: "GitHub", url: "https://github.com/sabik-ahmd" },
+                        { icon: <FaTwitter />, color: "hover:text-[#1DA1F2]", label: "Twitter", url: "https://x.com/sabik_ahmd?t=w0BjueZObz8400v-_we2xw&s=09" },
                       ].map((social, index) => (
                         <motion.a
                           key={index}

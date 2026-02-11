@@ -1,5 +1,15 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+
+import retroBellaImg from "../assets/projects/retrobella.png";
+import microtechImg from "../assets/projects/microtech.png";
+import textUtilsImg from "../assets/projects/text.png";
+import jobPortalImg from "../assets/projects/job.png";
+import examImg from "../assets/projects/exam.jpeg";
+import pixelFramesImg from "../assets/projects/pixelframes.png";
+import portfolioImg from "../assets/projects/portfolio.png";
+import h1Img from "../assets/projects/h1.png"
+
 import { 
   FaGithub, 
   FaExternalLinkAlt, 
@@ -16,131 +26,167 @@ const Projects = () => {
 
   const projects = [
     {
-      id: 1,
-      title: "E-commerce Dashboard",
-      category: "react",
-      description: "Admin dashboard with real-time analytics, product management, and order tracking system. Built during my React.js internship with comprehensive features.",
-      image: "/projects/ecommerce-dashboard.jpg", // Replace with your image
-      technologies: ["React", "Chart.js", "Tailwind CSS", "REST API", "Context API"],
-      github: "https://github.com/sabik-ahmd/ecommerce-dashboard",
-      live: "https://ecommerce-dashboard-demo.vercel.app",
-      features: [
-        "Real-time sales analytics with charts",
-        "Product CRUD operations",
-        "Order management system",
-        "Responsive design for all devices",
-        "User authentication & authorization"
-      ],
-      highlights: ["Internship Project", "6 Months Development", "Live Deployment"]
-    },
+  id: 1,
+  title: "HealthOne+ - Healthcare E-commerce (UI/UX Concept)(ongoing-project)",
+  category: "frontend",
+  description: "Modern healthcare e-commerce platform UI concept for medicines, baby care, and medical devices. Features clean product listings, offers, and a trusted medical brand experience. Currently a front-end demo with ongoing development.",
+  image: h1Img,
+  technologies: ["React", "Tailwind CSS", "Responsive Design", "UI/UX Design", "Netlify"],
+  github: "https://github.com/sabik-ahmd/healthoneplus",
+  live: "https://healthoneplus.netlify.app",
+  features: [
+    "Product catalog with categories and deals",
+    "Responsive healthcare e-commerce layout",
+    "Product cards with pricing and stock status",
+    "Modern gradient design system",
+    "Static UI prototype - Backend in development"
+  ],
+  highlights: ["UI/UX Concept", "Front-end Demo", "Healthcare", "In Progress"]
+},
     {
       id: 2,
-      title: "Task Management App",
+      title: "RetroBella (ongoing-project)",
       category: "react",
-      description: "Full-featured task manager with drag & drop functionality, filtering, themes, and local storage integration.",
-      image: "/projects/task-manager.jpg", // Replace with your image
-      technologies: ["React", "DnD Kit", "Context API", "Local Storage", "Tailwind"],
-      github: "https://github.com/sabik-ahmd/task-manager",
-      live: "https://task-manager-demo.vercel.app",
+      description: "Modern e-commerce fashion website built with React and Vite. Features product listings, responsive UI, clean component architecture, and smooth user experience.",
+      image: retroBellaImg,
+      technologies: ["React", "Vite", "CSS3", "Netlify", "Responsive Design"],
+      github: "https://github.com/sabik-ahmd/retro-bella-frontend",
+      live: "https://retrobella.netlify.app",
       features: [
-        "Drag & drop task organization",
-        "Dark/light theme toggle",
-        "Real-time search and filtering",
-        "Task categories and tags",
-        "Progress tracking"
+        "Product listings and filtering",
+        "Responsive mobile-first design",
+        "Clean component architecture",
+        "Smooth animations",
+        "Modern fashion e-commerce UI"
       ],
-      highlights: ["Personal Project", "Advanced Features", "Modern UI/UX"]
+      highlights: ["Featured Project", "E-commerce", "Production Ready"]
     },
     {
       id: 3,
-      title: "TextUtils - Text Manipulation Tool",
+      title: "MicroTech Web",
       category: "react",
-      description: "Advanced text manipulation tool with multiple utilities for developers and writers. Convert cases, analyze text, and more.",
-      image: "/projects/textutils.jpg", // Replace with your image
-      technologies: ["React", "JavaScript", "CSS3", "Bootstrap"],
-      github: "https://github.com/sabik-ahmd/textutils",
-      live: "https://textutils-demo.vercel.app",
+      description: "Mobile repair service website showcasing services, gallery, project explanations, and contact form with modern UI/UX design.",
+      image: microtechImg,
+      technologies: ["React", "CSS3", "Netlify", "Responsive Design"],
+      github: "https://github.com/sabik-ahmd/microtech",
+      live: "https://microtech1.netlify.app",
       features: [
-        "Text case conversion (UPPER/lower/Title)",
-        "Word and character count",
-        "Text analysis and statistics",
-        "Copy to clipboard",
-        "Dark mode support"
+        "Service showcase gallery",
+        "Project portfolio section",
+        "Interactive contact form",
+        "Mobile repair service listings",
+        "Smooth navigation"
       ],
-      highlights: ["Learning Project", "Open Source", "Utility Tool"]
+      highlights: ["Service Business", "Modern UI", "Responsive"]
     },
     {
       id: 4,
-      title: "Weather Application",
-      category: "react",
-      description: "Real-time weather application with location detection, 5-day forecast, and beautiful visualizations.",
-      image: "/projects/weather-app.jpg", // Replace with your image
-      technologies: ["React", "OpenWeather API", "Geolocation", "Axios", "Chart.js"],
-      github: "https://github.com/sabik-ahmd/weather-app",
-      live: "https://weather-app-demo.vercel.app",
+      title: "Pixel Frames",
+      category: "fullstack",
+      description: "Full-stack wedding and event photography portfolio website with client galleries and media management system.",
+      image: pixelFramesImg,
+      technologies: ["React", "Node.js", "Express", "MongoDB", "Cloud Storage"],
+      github: "https://github.com/sabik-ahmd/pixel-frames",
+      live: "https://pixelframes.netlify.app",
       features: [
-        "Real-time weather data",
-        "5-day forecast",
-        "Location-based weather",
-        "Unit conversion (C/F)",
-        "Responsive design"
+        "Client photo galleries",
+        "Event portfolio showcase",
+        "Media management system",
+        "Responsive gallery layout",
+        "Wedding photography portfolio"
       ],
-      highlights: ["API Integration", "Real-time Data", "Learning Project"]
+      highlights: ["Full-stack", "Photography", "MERN Stack"]
     },
     {
       id: 5,
+      title: "Portfolio Website",
+      category: "frontend",
+      description: "Interactive personal portfolio showcasing projects, skills, and certifications with modern animations and optimized responsiveness.",
+      image: portfolioImg,
+      technologies: ["React", "Framer Motion", "CSS3", "Netlify"],
+      github: "https://github.com/sabik-ahmd/mern-port.git",
+      live: "https://sabikdev.netlify.app",
+      features: [
+        "Project showcase gallery",
+        "Skills and certifications display",
+        "Smooth scroll animations",
+        "Mobile responsive design",
+        "Modern gradient aesthetics"
+      ],
+      highlights: ["Personal Branding", "Interactive UI", "Animation"]
+    },
+    {
+      id: 6,
+      title: "TextUtils",
+      category: "react",
+      description: "Advanced text manipulation tool offering powerful case conversion, text analysis, and various utilities beyond basic text editors.",
+      image: textUtilsImg,
+      technologies: ["React", "JavaScript", "Bootstrap", "CSS3"],
+      github: "https://github.com/sabik-ahmd/textutils",
+      live: "https://text-check.netlify.app",
+      features: [
+        "Multiple case conversion options",
+        "Word and character counter",
+        "Text analysis statistics",
+        "Copy to clipboard function",
+        "Dark/Light theme toggle"
+      ],
+      highlights: ["Utility Tool", "Productivity", "Open Source"]
+    },
+    {
+      id: 7,
       title: "Part Time Job Portal",
       category: "fullstack",
-      description: "Full-stack job portal connecting students with employers. Built with React frontend and Node.js backend.",
-      image: "/projects/job-portal.jpg", // Replace with your image
+      description: "Full-stack React platform connecting college students with recruiters. Streamlines job searches and applications through an intuitive interface.",
+      image: jobPortalImg,
       technologies: ["React", "Node.js", "Express", "MongoDB", "JWT"],
       github: "https://github.com/sabik-ahmd/job-portal",
       live: "#",
       features: [
-        "User authentication & authorization",
-        "Job posting & application system",
-        "Resume upload & parsing",
-        "Real-time notifications",
-        "Admin dashboard"
+        "Student and recruiter profiles",
+        "Job posting and applications",
+        "Search and filter jobs",
+        "Application tracking",
+        "User authentication"
       ],
-      highlights: ["Full-stack", "MERN Stack", "Real-world Application"]
+      highlights: ["Full-stack", "MERN Stack", "Career Platform"]
     },
     {
-      id: 6,
+      id: 8,
       title: "Online Exam Proctoring System",
       category: "fullstack",
-      description: "AI-powered exam proctoring system with computer vision for cheating detection and analytics.",
-      image: "/projects/exam-system.jpg", // Replace with your image
+      description: "AI-powered exam proctoring system using Django with computer vision and ML to detect cheating, providing monitoring and detailed student behavior reports.",
+      image: examImg,
       technologies: ["Django", "Python", "OpenCV", "Machine Learning", "PostgreSQL"],
-      github: "https://github.com/sabik-ahmd/exam-proctoring",
+      github: "#",
       live: "#",
       features: [
-        "Face detection & recognition",
+        "Face detection and tracking",
         "Cheating behavior detection",
-        "Real-time monitoring",
-        "Analytics dashboard",
-        "Secure exam environment"
+        "Real-time exam monitoring",
+        "Student behavior analytics",
+        "Detailed proctoring reports"
       ],
-      highlights: ["AI/ML Integration", "Computer Vision", "Academic Project"]
+      highlights: ["AI/ML", "Computer Vision", "Academic"]
     },
     {
-      id: 7,
-      title: "Portfolio Website",
-      category: "frontend",
-      description: "Modern, responsive portfolio website showcasing my projects and skills with smooth animations.",
-      image: "/projects/portfolio.jpg", // Replace with your image
-      technologies: ["React", "Framer Motion", "Tailwind CSS", "Type Animation"],
-      github: "https://github.com/sabik-ahmd/portfolio",
-      live: "https://sabik.dev",
+      id: 9,
+      title: "Task Manager Pro",
+      category: "react",
+      description: "Feature-rich task management application with drag-and-drop organization, priority levels, and progress tracking.",
+      image: "/projects/task-manager.png",
+      technologies: ["React", "DnD Kit", "Local Storage", "Context API", "Tailwind CSS"],
+      github: "https://github.com/sabik-ahmd/task-manager",
+      live: "https://task-manager-pro-sabik.netlify.app",
       features: [
-        "Responsive design",
-        "Smooth animations",
-        "Interactive UI elements",
-        "Performance optimized",
-        "Modern design system"
+        "Drag-and-drop task organization",
+        "Priority levels and tags",
+        "Due date reminders",
+        "Progress tracking dashboard",
+        "Local storage persistence"
       ],
-      highlights: ["Personal Branding", "Latest Tech Stack", "Performance Focused"]
-    },
+      highlights: ["Productivity", "Drag & Drop", "Local Storage"]
+    }
   ];
 
   const categories = [
@@ -224,8 +270,8 @@ const Projects = () => {
             </span>
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            A collection of my recent work including internship projects, personal experiments, 
-            and learning experiences. Each project represents a step in my development journey.
+            A collection of my recent work including e-commerce platforms, full-stack applications, 
+            and AI-powered systems. Each project represents a step in my development journey.
           </p>
         </motion.div>
 
@@ -240,7 +286,7 @@ const Projects = () => {
             { label: "Total Projects", value: projects.length, color: "from-cyan-500 to-blue-500" },
             { label: "React Projects", value: projects.filter(p => p.category === "react").length, color: "from-purple-500 to-pink-500" },
             { label: "Live Demos", value: projects.filter(p => p.live !== "#").length, color: "from-green-500 to-emerald-500" },
-            { label: "Open Source", value: projects.filter(p => p.github).length, color: "from-yellow-500 to-orange-500" },
+            { label: "Open Source", value: projects.filter(p => p.github !== "#").length, color: "from-yellow-500 to-orange-500" },
           ].map((stat, index) => (
             <motion.div
               key={stat.label}
@@ -314,6 +360,10 @@ const Projects = () => {
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    onError={(e) => {
+                      e.target.onerror = null;
+                      e.target.src = "https://via.placeholder.com/400x200/0a192f/00ffff?text=" + project.title.replace(/ /g, '+');
+                    }}
                   />
                   
                   {/* Highlights */}
@@ -324,7 +374,7 @@ const Projects = () => {
                         initial={{ opacity: 0, x: -10 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: index * 0.1 }}
-                        className="px-2 py-1 bg-black/50 backdrop-blur-sm rounded text-xs font-medium"
+                        className="px-2 py-1 bg-black/50 backdrop-blur-sm rounded text-xs font-medium text-white"
                       >
                         {highlight}
                       </motion.span>
@@ -346,13 +396,13 @@ const Projects = () => {
                     {project.title}
                   </h3>
                   
-                  <p className="text-gray-300 mb-4 text-sm">
+                  <p className="text-gray-300 mb-4 text-sm line-clamp-2">
                     {project.description}
                   </p>
 
                   {/* Technologies */}
                   <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech, index) => (
+                    {project.technologies.slice(0, 4).map((tech, index) => (
                       <motion.span
                         key={index}
                         initial={{ opacity: 0, scale: 0 }}
@@ -363,6 +413,11 @@ const Projects = () => {
                         {tech}
                       </motion.span>
                     ))}
+                    {project.technologies.length > 4 && (
+                      <span className="px-3 py-1 bg-white/5 rounded-full text-xs text-gray-400">
+                        +{project.technologies.length - 4}
+                      </span>
+                    )}
                   </div>
 
                   {/* Features */}
@@ -383,10 +438,14 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-white/5 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all group/btn"
+                      className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+                        project.github !== "#"
+                          ? "bg-white/5 text-gray-300 hover:text-white hover:bg-white/10"
+                          : "bg-white/5 text-gray-500 cursor-not-allowed opacity-50"
+                      }`}
                     >
-                      <FaGithub className="group-hover/btn:text-white transition-colors" />
-                      <span className="text-sm">Code</span>
+                      <FaGithub />
+                      <span>Code</span>
                     </motion.a>
                     
                     <motion.a
@@ -398,7 +457,7 @@ const Projects = () => {
                       className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                         project.live !== "#"
                           ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:shadow-lg hover:shadow-cyan-500/30"
-                          : "bg-white/5 text-gray-400 cursor-not-allowed"
+                          : "bg-white/5 text-gray-400 cursor-not-allowed opacity-50"
                       }`}
                     >
                       <FaExternalLinkAlt />
